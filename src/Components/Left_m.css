@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#left {
+    position: relative;
+}
+#l1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    left: 45%;
+    top: 4%;
+    z-index: 1008;
+    font-weight: bolder;
+}
+
+#l2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 85%;
+    left: 4%;
+    z-index: 1008;
+    font-size: larger;
+}
+#l3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 85%;
+    left: 50%;
+    z-index: 1008;
+}
