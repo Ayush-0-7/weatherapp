@@ -28,7 +28,7 @@ const Right_m = () => {
             const position = await navigator.geolocation.getCurrentPosition(async(pos) => {
               setlat(pos.coords.latitude)
               setlon(pos.coords.longitude)
-              const response = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&appid=e22b3f61b9dca5fbec42df6eb73864e4`)
+              const response = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&appid=e22b3f61b9dca5fbec42df6eb73864e4`)
               if(response.ok){
                 const data = await response.json();
                 city.current.value = data[0].name;
