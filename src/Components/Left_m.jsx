@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Left_m.css'
 import { useSelector } from 'react-redux';
 import lodash from 'lodash';
+import city from '/src/images/city.jpg';
 const Left_m = () => {
   const weather = useSelector(state=>state.weather);
   const [time,settime] = useState('');
@@ -15,7 +16,7 @@ const Left_m = () => {
   
   return (
     <div id='left' className='h-full w-[60%]'>
-    <img src={'../src/images/city.jpg'} alt="Full Screen Image" className='h-full rounded-tl-md rounded-bl-md' style={{objectFit:"cover"}}/>
+    <img src={city} alt="Full Screen Image" className='h-full rounded-tl-md rounded-bl-md' style={{objectFit:"cover"}}/>
     <div id='l1' className='text-white text-ellipsis overflow-auto text-right text-2xl'>
        {lodash.capitalize(weather.city)} <br />
        IN
