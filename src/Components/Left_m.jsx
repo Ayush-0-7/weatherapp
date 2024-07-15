@@ -15,7 +15,7 @@ const Left_m = () => {
   
   return (
     <div id='left' className='h-full w-[60%]'>
-    <img src="../public/static/images/city.jpg" alt="Full Screen Image" className='h-full rounded-tl-md rounded-bl-md' style={{objectFit:"cover"}}/>
+    <img src={'../src/images/city.jpg'} alt="Full Screen Image" className='h-full rounded-tl-md rounded-bl-md' style={{objectFit:"cover"}}/>
     <div id='l1' className='text-white text-ellipsis overflow-auto text-right text-2xl'>
        {lodash.capitalize(weather.city)} <br />
        IN
